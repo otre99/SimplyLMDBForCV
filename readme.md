@@ -5,9 +5,8 @@ This [script](./im_db_creator.py) create an key-value store dataset using LMDB (
 
 ## Usage:
 ```
-$ python3 im_db_creator.py --help 
-usage: im_db_creator.py [-h] [--output_folder OUTPUT_FOLDER] [--channels CHANNELS] [--width WIDTH] [--height HEIGHT] [--shuffle SHUFFLE] [--swap_channels SWAP_CHANNELS]
-                        input_file
+$ python3 im_db_creator.py --help
+usage: im_db_creator.py [-h] [--output_folder OUTPUT_FOLDER] [--channels CHANNELS] [--width WIDTH] [--height HEIGHT] [--shuffle SHUFFLE] input_file
 
 Create an LMDB dataset from existing tagged images
 
@@ -21,9 +20,7 @@ optional arguments:
   --channels CHANNELS   Number of channels of the input images (1-GRAY 3-RBG)
   --width WIDTH         Input image width
   --height HEIGHT       Input image height
-  --shuffle SHUFFLE     Shuffle images list before create the NumPy dataset
-  --swap_channels SWAP_CHANNELS
-                        Use BGR instead of RGB
+  --shuffle SHUFFLE     Shuffle images list before create the dataset
 ```
 
 ### Example:

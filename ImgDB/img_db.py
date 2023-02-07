@@ -126,20 +126,8 @@ def create_db(output_folder, input_folder, images, labels, c, w, h):
 
         if (w != -1 and h != -1) and (p_img.width != w or p_img.height != h):
             p_img = p_img.resize((w, h))
-        
-        #if p_img.width > 416:
-        #    s = 416.0/p_img.width #min(416.0/p_img.width, 416.0/p_img.height)
-        #    nw, nh = int(p_img.width*s), int(p_img.height*s)
-        #    p_img = p_img.resize((nw, nh))
-        #    labels[i] = labels[i].reshape(-1,6)
-        #    labels[i][:,:4]*=s
-        #    labels[i] = labels[i].reshape(-1)
-
-        
+              
         p_img = p_img.convert(mode=color_mode)
-
-
-
 
         img_db.WriteOne(ImageLabelPairEncoder(p_img, labels[i]))
         print("image: {:6}/{}".format(i, len(images)), end="\r")
