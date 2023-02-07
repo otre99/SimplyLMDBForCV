@@ -65,7 +65,7 @@ train/image02.jpg 0 4 300 300 2
   :
 ```  
 
-In this case, the numbers represent the coordinates of the objects and the category: `x1 y1 w1 h1 label1 x2 y2 w2 h2 label2 ...`
+In this case, the numbers represent the coordinates of the objects and the category: `x1 y1 w1 h1 label1 x2 y2 w2 h2 label2 ...`, but you can use whatever structure you want!.
 
 ## How to use?
 
